@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Get Groovy - Connexion</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <header>
+            <nav class="trn">
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+                  <img src="mus.jpg" height="50" width="50">
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a href="connexion.html">acceuil</a></li>
+                     <li><a href="#alb">Albums</a></li>
+                     <li><a href="#Inscription">Inscription</a></li>
+                     <li><a href="#Contactez-nous">Contactez-nous</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+<div class="content">
+ <div class="main">
+   <h1 id="alb">Albums</h1>
+   <hr>
+   <div class="row">
+      <div class="column">
+         <div class="content">
+            <img src="R_B.jpg" alt="soul" style="width:100%">
+            <h3>R&B</h3>
+         </div>
+      </div>
+      <div class="column">
+         <div class="content">
+            <img src="3.jpg" alt="soul" style="width:100%">
+            <h3>SOUL</h3>
+         </div>
+      </div>
+      <div class="column">
+         <div class="content">
+            <img src="jazz.jpg" alt="Lights" style="width:100%">
+            <h3>JAZZ</h3>
+         </div>
+      </div>
+      <div class="column">
+         <div class="content">
+           <img src="rock.jpg" alt="Mountains" style="width:100%">
+           <h3>ROCK</h3>
+         </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="8.jpg" alt="Nature" style="width:100%">
+        <h3>ECLECTRONIC</h3>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="clas.jpg" alt="Nature" style="width:100%">
+        <h3>classical</h3>
+      </div>
+    </div>
+</div>
+<div class="content">
+  <img src="2.jpg" alt="Bear" style="width:100%">
+  <h3>MUSIC</h3>
+  <p>la musique est la langue des emotions </p>
+</div>
+</div>
+</div>
+</div>
+<center>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:90%;" id="Inscription"><h2>Inscription</h2></button>
+</center>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="icon.png" alt="Avatar" class="avatar" height="150" width="150">
+    </div>
+
+    <div class="container">
+       <h2><b>fiche personnelle</b></h2>
+      <label><b>Nom</b></label>
+      <input type="text" placeholder="saisir votre nom" name="uname" required><br><br>
+      <label><b>Prenom</b></label>
+      <input type="text" placeholder="saisir votre prenom" name="uname" required><br><br>
+      <label><b>Date de naissance </b></label>
+      <input type="Date" placeholder="" name="uname" required>
+      <br><br>
+      <b>sexe</b><br>
+      <input type="radio" name="femme"><label>femme</label>
+      <input type="radio" name="homme"><label>homme</label><br><br>
+      <label><b>adressse mail </b></label>
+      <input type="email" placeholder="" name=""><br><br>
+      <label><b>telephone </b></label>
+      <input type="tel" placeholder="" name=""><br><br>
+      <label><b>niveau scolaire</b></label>
+       <select>
+           <option>ingénieur</option>
+           <option>master</option>
+           <option>licencie</option>
+           <option>bac</option>
+       </select><br><br>
+      <label><b>adresse</b></label>
+      <textarea name="ameliorer" id="ameliorer" rows="5" cols="30"></textarea><br><br>
+      <h2><b>préférencer</b></h2>
+      <label>style de music </label><br><br>
+      <input type="checkbox" name="frites" id="frites" /> <label for="frites">R&B</label><br><br>
+      <input type="checkbox" name="steak" id="steak" /> <label for="steak">SOUL</label><br><br>
+      <input type="checkbox" name="epinards" id="epinards" /> <label for="epinards">JAZZ</label><br><br>
+      <input type="checkbox" name="huitres" id="huitres" /> <label for="huitres">ROCK</label><br><br>
+      <input type="checkbox" name="huitres" id="huitres" /> <label for="huitres">ELECTRONIC</label><br><br>
+      <input type="checkbox" name="huitres" id="huitres" /> <label for="huitres">CLASSIC</label><br><br>
+      <h2><b>confirmation et connexion</b></h2><br>
+      <label><b>login </b></label>
+      <input type="email" placeholder="" name=""><br><br>
+      <label for="psw"><b>mot de passe</b></label>
+      <input type="password" placeholder="saisir votre mot de passe" name="psw" required><br><br>
+      <label for="psw"><b>confirmer mot de passe</b></label>
+      <input type="password" placeholder="confirmer votre mot de passe" name="psw" required>
+        
+      
+      
+      <button type="submit">Inscription</button><br>
+       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+
+    
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+<div class="footer">
+<div class="container">
+
+    <hr>
+        <div class="text-center center-block">
+            <p class="txt-railway" id="Contactez-nous"><h3>Contactez-nous</h3></p>
+            <br />
+                <a href="#"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+               <a href="#"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+               <a href="#"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+               <a href="#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+</div>
+    <hr>
+</div>
+
+<br />
+
+
+</div>
+   </body>
+</html>
